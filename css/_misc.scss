@@ -1,0 +1,50 @@
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+.container{
+	position:relative;
+}
+
+.ir{
+	display:block;
+	text-indent:100%;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+.wide-container {
+  margin:0 auto;
+  width:auto;
+  max-width:75%;
+}
+
+.narrow-container {
+	margin:0 auto;
+	width:auto;
+	max-width:75%;
+	@include media-breakpoint-up(md){
+		max-width:50%;
+	}
+}
+
+.m-20 {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.primary-color {
+  color:$primary;
+}
+
+.white-bg {
+  background:#fff;
+}
+
+.medium-zoom-overlay {
+    z-index:10000!important;
+}
+.medium-zoom-image--opened {
+    z-index:10001!important;
+}

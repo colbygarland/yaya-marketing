@@ -1,0 +1,17 @@
+.video-bg {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
+.video-bg video {
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+.video-bg h1 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=video-bg.css.map */

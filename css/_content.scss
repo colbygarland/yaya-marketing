@@ -1,0 +1,34 @@
+.content {
+
+    position: relative;
+    z-index:1;
+    background:#fff;
+    padding-top:$padding-mobile;
+    padding-bottom:$padding-mobile;
+
+    @include media-breakpoint-up(lg){
+        padding-top:$padding-desktop;
+        padding-bottom:$padding-desktop;
+
+        &.xl {
+            padding-top:#{$padding-desktop * 2};
+            padding-bottom:#{$padding-desktop * 2};
+        }
+    }
+
+}
+
+.grey-bg {
+    background:$light;
+}
+
+.primary-bg {
+    background:$primary;
+    color:#fff;
+    a {
+        color:#fff;
+        &:after {
+            background:#fff;
+        }
+    }
+}

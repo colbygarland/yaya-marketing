@@ -1,0 +1,56 @@
+body {
+  font-family:$font;
+}
+
+h3 {
+  font-size:2rem;
+  margin-bottom:20px;
+  line-height: 1.4;
+}
+
+p, li {
+  font-size:19px;
+}
+
+a {
+  color:$primary;
+  transition: 0.4s;
+  &:hover, &:active, &:focus {
+    color:lighten($primary,10%);
+    text-decoration: none;
+  }
+}
+
+.lite {
+  font-weight:300;
+}
+
+.text-primary {
+    color:$primary!important;
+}
+
+.modal-title {
+
+    color:$primary;
+    padding-left:40px;
+    position:relative;
+
+    &:before {
+        content:'';
+        background-image:url(../img/pureflow-icon.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        height:30px;
+        width:30px;
+        display:inline-block;
+        position:absolute;
+        left:0;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+}
+
+.font-size-lg {
+    font-size: 3rem;
+}

@@ -1,0 +1,29 @@
+.btn {
+
+    border-radius:0;
+    padding-left:30px;
+    padding-right:30px;
+
+    &:after {
+        display:none;
+    }
+
+}
+
+.btn-link {
+    color:$primary;
+
+}
+
+.btn-ghost-white {
+
+    border-color:#fff;
+    color:#fff;
+    background:none;
+
+    &:hover, &:active, &:focus {
+        background:#fff;
+        color:$primary;
+    }
+
+}

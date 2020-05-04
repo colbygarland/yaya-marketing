@@ -1,0 +1,49 @@
+.parallax-bg {
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-top:#{$padding-mobile * 4};
+    padding-bottom:#{$padding-mobile * 4};
+
+    position:relative;
+
+    @include media-breakpoint-up(lg){
+
+        padding-top:#{$padding-desktop * 3};
+        padding-bottom:#{$padding-desktop * 3};
+
+        &.parallax-fixed {
+            background-attachment: fixed;
+        }
+
+    }
+
+    &:before {
+        @extend .overlay;
+    }
+
+    .text-box {
+
+        position: relative;
+        z-index:2;
+        color:#fff;
+
+    }
+
+    .text-box__title {
+
+        font-size:40px;
+
+        @include media-breakpoint-up(md){
+            font-size:50px;
+        }
+
+        @include media-breakpoint-up(lg){
+            font-size:70px;
+        }
+
+    }
+
+}
