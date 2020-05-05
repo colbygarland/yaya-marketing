@@ -12,18 +12,17 @@ header {
 
         @include media-breakpoint-up(lg){
             display:flex;
-            justify-content: space-between;
             align-items: center;
         }
     }
 
     img {
 
-        width:180px;
+        height:40px;
         margin: 0;
 
         @include media-breakpoint-up(lg){
-            width:320px;
+            height:100px;
         }
     }
 
@@ -31,6 +30,10 @@ header {
 
         &:after {
             display:none;
+        }
+
+        @include media-breakpoint-up(lg){
+            margin-right:40px;
         }
 
     }

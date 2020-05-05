@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
 
     <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 
 </head>
@@ -22,7 +22,9 @@
 <header id="header">
     <div class="container">
         <a href="/" class="nav-img">
-            <img src="img/ymi-logo.png" alt="YaYa Marketing Inc." />
+            <img class="d-none d-lg-block" src="img/ymi-logo.png" alt="YaYa Marketing Inc." />
+            <img class="d-lg-none" src="img/ymi-icon.png" alt="YaYa Marketing Inc." />
+            <img class="d-lg-none" src="img/ymi-words.png" alt="YaYa Marketing Inc." />
         </a>
         <div id="menuToggle">
             <input type="checkbox" id="MenuToggleCheckbox" />
@@ -33,13 +35,20 @@
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="about">About Us</a></li>
                 <li><a href="services">Services</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="contact">Connect With Us</a></li>
             </ul>
         </div>
     </div>
 </header>
 
 <main>
+
+    <section class="hero" style="background-image:url(img/home-page.jpg)">
+        <div class="hero__text container">
+            <h1 class="hero__text__title">YaYa Marketing Inc.</h1>
+            <h4 class="hero__text__tagline">We help businesses create and market content that matters.</h4>
+        </div>
+    </section>
 
 </main>
 
