@@ -6771,7 +6771,7 @@ footer p {
 }
 .border-gradient-bottom:after {
   content: "";
-  height: 10px;
+  height: 30px;
   width: 100%;
   display: block;
   position: absolute;
@@ -6781,7 +6781,7 @@ footer p {
 }
 @media (min-width: 992px) {
   .border-gradient-bottom:after {
-    height: 40px;
+    height: 80px;
   }
 }
 
