@@ -32,3 +32,34 @@
         }
     }
 }
+
+.border-gradient-bottom {
+
+    position:relative;
+
+    &:after {
+        content:'';
+        height:10px;
+        width:100%;
+        display:block;
+        position:absolute;
+        bottom:0;
+        left:0;
+        background: linear-gradient(45deg, rgba(244,4,2,1) 0%, rgba(244,4,2,0.3) 20%, rgba(244,4,2,0) 100%);
+
+        @include media-breakpoint-up(lg){
+            height:40px;
+        }
+    }
+
+}
+
+.spacer {
+
+    height:20px;
+    background:$primary;
+
+    &.secondary-color {
+        background:$secondary;
+    }
+}

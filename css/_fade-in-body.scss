@@ -1,0 +1,10 @@
+body {
+
+    opacity:0;
+    transition:0.4s opacity ease-in-out;
+
+    &.fade-in {
+        opacity:1;
+    }
+
+}
