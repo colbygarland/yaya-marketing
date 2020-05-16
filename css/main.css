@@ -6628,6 +6628,18 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@media (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
 h3 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -6653,25 +6665,6 @@ a:hover, a:active, a:focus {
 
 .text-primary {
   color: #f40402 !important;
-}
-
-.modal-title {
-  color: #f40402;
-  padding-left: 40px;
-  position: relative;
-}
-.modal-title:before {
-  content: "";
-  background-image: url(../img/pureflow-icon.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .font-size-lg {
@@ -6791,6 +6784,25 @@ footer p {
 }
 .spacer.secondary-color {
   background: #002540;
+}
+
+.primary-overlay {
+  position: relative;
+}
+.primary-overlay h1, .primary-overlay h2, .primary-overlay h3, .primary-overlay h4, .primary-overlay h5, .primary-overlay h6, .primary-overlay p, .primary-overlay a {
+  position: relative;
+  z-index: 2;
+}
+.primary-overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: #f40402 !important;
+  opacity: 0.7;
 }
 
 .hero {
@@ -6973,6 +6985,11 @@ img {
 
 .medium-zoom-image--opened {
   z-index: 10001 !important;
+}
+
+#mc_embed_signup {
+  clear: left;
+  font: 14px "Open Sans", sans-serif;
 }
 
 .no-list-style {

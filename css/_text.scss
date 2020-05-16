@@ -2,6 +2,18 @@ body {
   font-family:$font;
 }
 
+h1 {
+    @include media-breakpoint-up(lg){
+        font-size:4rem;
+    }
+}
+
+h2 {
+    @include media-breakpoint-up(lg){
+        font-size:3rem;
+    }
+}
+
 h3 {
   font-size:2rem;
   margin-bottom:20px;
@@ -27,28 +39,6 @@ a {
 
 .text-primary {
     color:$primary!important;
-}
-
-.modal-title {
-
-    color:$primary;
-    padding-left:40px;
-    position:relative;
-
-    &:before {
-        content:'';
-        background-image:url(../img/pureflow-icon.svg);
-        background-size:contain;
-        background-repeat: no-repeat;
-        height:30px;
-        width:30px;
-        display:inline-block;
-        position:absolute;
-        left:0;
-        top:50%;
-        transform:translateY(-50%);
-    }
-
 }
 
 .font-size-lg {
