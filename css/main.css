@@ -7068,5 +7068,15 @@ body.fade-in {
     font-size: 55px;
   }
 }
+@media (min-width: 992px) {
+  .photo-bg.about-page {
+    background-position: 0 -160px;
+  }
+}
+@media (min-width: 992px) {
+  .photo-bg.contact-page {
+    background-position: 0 -260px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
