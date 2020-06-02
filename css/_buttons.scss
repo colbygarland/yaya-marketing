@@ -12,7 +12,6 @@
 
 .btn-link {
     color:$primary;
-
 }
 
 .btn-ghost-white {
@@ -26,4 +25,15 @@
         color:$primary;
     }
 
+}
+
+.btn-primary {
+    background:$primary;
+    border-color:$primary;
+
+    &:hover, &:active, &:focus {
+        background:darken($primary, 10%);
+        border-color:darken($primary, 10%);
+        outline:none;
+    }
 }

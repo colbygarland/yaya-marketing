@@ -1,0 +1,39 @@
+.wavy-bg {
+
+    position:relative;
+    margin-bottom:80px;
+
+    .wave {
+
+        position: relative;
+        height: 70px;
+        width: 100%;
+        background: $primary;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 50%;
+            height: 80px;
+            background-color: white;
+            right: -5px;
+            top: 40px;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 50%;
+            height: 70px;
+            background-color: $primary;
+            left: 0;
+            top: 27px;
+        }
+
+    }
+
+}
