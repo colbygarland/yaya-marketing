@@ -41,4 +41,17 @@
         }
     }
 
+
+    &.about-page {
+        @include media-breakpoint-up(lg){
+            background-position:0 -160px;
+        }
+    }
+
+    &.contact-page {
+        @include media-breakpoint-up(lg){
+            background-position:0 -260px;
+        }
+    }
+
 }

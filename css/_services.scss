@@ -95,3 +95,37 @@
         margin:0;
     }
 }
+
+.card {
+
+    border-radius: 0;
+    border:none;
+
+    .card-body {
+
+        position:relative;
+
+        &:before {
+            content:'';
+            background:#fff;
+            height:70px;
+            width:100%;
+            position:absolute;
+            top:-40px;
+            left:0;
+            z-index:1;
+            transform: skewY(-5deg);
+        }
+
+    }
+
+    .card-title {
+        position:relative;
+        z-index: 2;
+    }
+
+}
+
+.card-img-top {
+    border-radius: 0;
+}
